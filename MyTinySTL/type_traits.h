@@ -1,11 +1,14 @@
-﻿#ifndef MYTINYSTL_TYPE_TRAITS_H_
+// 防止重复包含
+#ifndef MYTINYSTL_TYPE_TRAITS_H_
 #define MYTINYSTL_TYPE_TRAITS_H_
 
 // 这个头文件用于提取类型信息
 
-// use standard header for type_traits
+// 标准库，它提供了许多类型特征(trait)和类型变换(transform)的工具，能够帮助程序员在编写模板代码时对类型进行更准确的判断和转换。
+// 该头文件中包含的模板类和模板函数都基于编译期静态分析，它们在编译时计算并产生结果，而不是在运行时。这些类型特征和类型变换的工具可用于泛型编程中，可以实现更加通用的代码。
 #include <type_traits>
 
+// 使用命名空间防止冲突
 namespace mystl
 {
 
